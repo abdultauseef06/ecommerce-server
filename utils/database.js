@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb+srv://mohammedtauseef06:Abdul8118@cluster0.d4u806b.mongodb.net/yubiApparels_admin?retryWrites=true&w=majority
-';
+const URI = 'mongodb+srv://mohammedtauseef06:Abdul8118@cluster0.d4u806b.mongodb.net/yubiApparels_admin?retryWrites=true&w=majority';
 
 const connectdb = async () => {
     try {
