@@ -13,7 +13,7 @@ const authmiddleware = async (req, res, next) => {
     console.log("Token from middleware:", jwtToken);
 
     try {
-        const isVerified = jwt.verify(jwtToken, process.env.JWT_SECRET_KEY);
+        const isVerified = jwt.verify(jwtToken, 'yubiApparels');
         console.log("Decoded Token:", isVerified);
         const userData = await User.findOne({email:isVerified.email}).select({password:0})
         console.log(userData);
