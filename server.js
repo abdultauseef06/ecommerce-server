@@ -10,7 +10,7 @@ const productRoutes = require('./router/product-route');
 const orderRoutes = require('./router/Order-route');
 const AddressRoute = require('./router/Address-route');
 const corsOptions = {
-  origin: "http://localhost:3001",
+  origin: "*",
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD", // Corrected to a space-separated string
   credentials: true,
 };
