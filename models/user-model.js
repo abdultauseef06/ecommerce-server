@@ -85,7 +85,7 @@ userSchema.methods.generateToken = async function () {
                 email: this.email,
                 isAdmin: this.isAdmin,
             },
-            process.env.yubiApparels
+            'yubiApparels'
         );
     } catch (error) {
         console.error(error);
